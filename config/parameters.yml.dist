@@ -1,0 +1,6 @@
+class: \skobka\appDi\configuration\BaseConfiguration
+pdo:
+  class: \skobka\appDi\configuration\BasePdoConfiguration
+  dsn: mysql:host=localhost;dbname=test
+  user: testUser
+  password: testPasswords

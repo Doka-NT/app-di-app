@@ -1,0 +1,23 @@
+{
+  "name": "skobka/app-di-app",
+  "description": "",
+  "minimum-stability": "dev",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Soshnikov Artem",
+      "email": "213036@skobka.com"
+    }
+  ],
+  "require": {
+    "skobka/app-di": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "src"
+    }
+  },
+  "scripts": {
+    "post-create-project-cmd": "php -r \"copy('config/parameters.yml.dist', 'config/parameters.yml');\""
+  }
+}
